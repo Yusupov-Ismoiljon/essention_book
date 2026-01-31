@@ -5,20 +5,20 @@
 }
 
 html, body {
-    height: 100%; /* container ekran balandligiga mos bo‘lsin */
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
     background: linear-gradient(180deg, #f8fafc, #eef2ff);
     color: #1f2937;
-    overflow-y: auto; /* agar content ko‘p bo‘lsa scroll paydo bo‘lsin */
+    overflow-y: auto;
 }
 
 /* ================= KONTEYNER ================= */
 .main-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* ekran balandligi bilan teng */
+    min-height: 100vh;
     max-width: 900px;
     margin: 0 auto;
     padding: 25px;
@@ -277,7 +277,6 @@ h2 {
     display: none;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 600px) {
 
     h2 {
