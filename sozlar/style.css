@@ -1,0 +1,251 @@
+/* ========== Umumiy ========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+
+/* ========== Sarlavha ========== */
+h1 {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+/* ========== Menu tugmalari ========== */
+/* Bo‘lim tanlash tugmalari container */
+.menu-buttons {
+    display: flex;             /* Flex box */
+    justify-content: center;   /* Gorizontal markaz */
+    align-items: center;       /* Vertikal markaz */
+    gap: 20px;                 /* Tugmalar orasida bo‘sh joy */
+    margin: 30px 0;            /* Yuqori va past bo‘sh joy */
+}
+
+/* Tugmalar dizayni */
+.menu-buttons button {
+    padding: 15px 35px;        /* Ichki bo‘sh joy */
+    font-size: 20px;           /* Katta va oson o‘qiladigan */
+    background-color: #1e40af; /* Yashil rang */
+    color: white;              /* Matn oq */
+    border: none;              /* Chegara yo‘q */
+    border-radius: 12px;       /* Yumaloq burchaklar */
+    cursor: pointer;           /* Ko‘rsatgich */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Yumshoq soya */
+    transition: all 0.3s ease-in-out;       /* Animatsiya */
+}
+
+/* Hover effekti */
+.menu-buttons button:hover {
+    background-color: #055296; /* To‘q yashil */
+    transform: translateY(-3px) scale(1.05); /* Biroz ko‘tarilish va kattalashish */
+}
+
+
+
+/* ========== Unit tugmalari ========== */
+/* Unit tugmalari uchun grid */
+#units, #game-units {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 ta ustun */
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+/* Unit tugmalari */
+.unit-btn {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.unit-btn:hover {
+    background-color: #059669;
+}
+
+
+/* So‘zlar ko‘rinadigan qator */
+.sozlar-qatori {        /* Oraliq */
+    background-color: #f0fdf4; /* Yengil yashil fon */
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-height: 120px;       /* Bo‘sh joy qoldirish */
+}
+.od{
+     display: flex;
+    flex-direction: end; /* So‘z, talaffuz va tarjima ustma-ust */
+    align-items: end;    /* Markazga tekislash */
+    justify-content: end;
+    gap: 20px;      
+
+}
+
+/* Inglizcha so‘z */
+#word-display {
+    margin-right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ca430e;
+}
+
+/* Talaffuz */
+#pronunciation {
+    font-size: 20px;
+    margin-right: 25px;
+    font-style: italic;
+    color: #52605b;
+}
+
+/* Tarjima */
+#translation {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+
+#timer {
+  font-size: 40px;
+  color: red;
+  margin-right: 50px;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+  margin-bottom: 20px;
+}
+
+
+
+/* ========== So‘z o‘yini bo‘limi ========== */
+#game-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#game-word {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+/* So‘z o‘yini input qutisi */
+#game-input {
+    width: 250px;             /* Kengligi */
+    padding: 10px 15px;       /* Ichki bo‘sh joy */
+    font-size: 18px;           /* Katta va oson o‘qiladigan */
+    border: 2px solid #10b981; /* Chegara rangli yashil */
+    border-radius: 8px;        /* Yumaloq burchaklar */
+    outline: none;             /* Focus paytida default outline yo‘q */
+    transition: all 0.2s ease-in-out; /* Fokusda animatsiya */
+    margin-top: 10px;
+}
+
+/* Inputga fokus qilganda */
+#game-input:focus {
+    border-color: #065f46;   /* Qalinroq va to‘q yashil */
+    box-shadow: 0 0 8px rgba(16,185,129,0.5); /* Yengil soya */
+}
+
+/* Tekshirish tugmasi */
+#game-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+#game-container button:hover {
+    background-color: #065f46;
+}
+
+
+/* ========== Bottom tugmalar ========== */
+#game-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#game-buttons button {
+    padding: 10px 16px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f59e0b;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#game-buttons button:hover {
+    background-color: #d97706;
+}
+
+/* ========== Natija (Result) ========== */
+#game-result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* ========== Bo‘limlarni yashirish ========== */
+.section {
+    display: none;
+}
+
+/* ========== Responsive ========== */
+@media(max-width: 600px) {
+    #game-input {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    .unit-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .menu-buttons button {
+        margin-bottom: 8px;
+    }
+}
+
+
+
+/* oddiy animatsiya pulsatsiya */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

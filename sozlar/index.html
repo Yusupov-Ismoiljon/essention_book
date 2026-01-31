@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Inglizcha so‘zlar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="main-container">
+
+    <h1>Inglizcha so‘zlar</h1>
+
+    <!-- Bo‘lim tanlash tugmalari -->
+    <div class="menu-buttons">
+        <button onclick="showSection('yodlash')">Yodlash bo‘limi</button>
+        <button onclick="showSection('soz-oyini')">So‘z o‘yini</button>
+    </div>
+
+    <!-- Yodlash bo‘limi -->
+    <div id="yodlash" class="section">
+        <h2>Yodlash bo‘limi</h2>
+        <div id="units">
+            <!-- Unit tugmalari -->
+            <button class="unit-btn" onclick="startUnit(1)">Unit 1</button>
+            <button class="unit-btn" onclick="startUnit(2)">Unit 2</button>
+            <button class="unit-btn" onclick="startUnit(3)">Unit 3</button>
+            <button class="unit-btn" onclick="startUnit(4)">Unit 4</button>
+            <button class="unit-btn" onclick="startUnit(5)">Unit 5</button>
+            <button class="unit-btn" onclick="startUnit(6)">Unit 6</button>
+            <button class="unit-btn" onclick="startUnit(7)">Unit 7</button>
+            <button class="unit-btn" onclick="startUnit(8)">Unit 8</button>
+            <button class="unit-btn" onclick="startUnit(9)">Unit 9</button>
+            <button class="unit-btn" onclick="startUnit(10)">Unit 10</button>
+            <button class="unit-btn" onclick="startUnit(11)">Unit 11</button>
+            <button class="unit-btn" onclick="startUnit(12)">Unit 12</button>
+            <button class="unit-btn" onclick="startUnit(13)">Unit 13</button>
+            <button class="unit-btn" onclick="startUnit(14)">Unit 14</button>
+        </div>
+       
+    
+        <!-- So‘zlar ko‘rinadigan qator -->
+        <div class="sozlar-qatori" id="word-section">
+
+    <div class="od">
+            <div id="word-display"></div>
+            <div id="pronunciation"></div>
+            <div id="translation"></div>
+     </div>
+ 
+                 <div class="timer-container">
+        <div id="timer">100</div>
+
+    </div>
+
+        </div>
+    </div>
+
+    <!-- So‘z o‘yini bo‘limi -->
+    <div id="soz-oyini" class="section" style="display:none;">
+        <h2>So‘z o‘yini</h2>
+        <div id="game-units">
+            <!-- So‘z o‘yini uchun unitlar -->
+            <button class="unit-btn" onclick="startGameUnit(1)">Unit 1</button>
+            <button class="unit-btn" onclick="startGameUnit(2)">Unit 2</button>
+            <button class="unit-btn" onclick="startGameUnit(3)">Unit 3</button>
+            <button class="unit-btn" onclick="startGameUnit(4)">Unit 4</button>
+            <button class="unit-btn" onclick="startGameUnit(5)">Unit 5</button>
+            <button class="unit-btn" onclick="startGameUnit(6)">Unit 6</button>
+            <button class="unit-btn" onclick="startGameUnit(7)">Unit 7</button>
+            <button class="unit-btn" onclick="startGameUnit(8)">Unit 8</button>
+            <button class="unit-btn" onclick="startGameUnit(9)">Unit 9</button>
+            <button class="unit-btn" onclick="startGameUnit(10)">Unit 10</button>
+            <button class="unit-btn" onclick="startGameUnit(11)">Unit 11</button>
+            <button class="unit-btn" onclick="startGameUnit(12)">Unit 12</button>
+            <button class="unit-btn" onclick="startGameUnit(13)">Unit 13</button>
+            <button class="unit-btn" onclick="startGameUnit(14)">Unit 14</button>
+        </div>
+
+        <!-- eng javob -->
+        <div class="eng-javov">
+    
+         
+        <div id="game-container">
+            <p id="game-word"></p>
+            <input type="text" id="game-input" placeholder="Inglizcha javobni yozing">
+            <button onclick="checkAnswer()">Tekshirish</button>
+        </div>
+
+        <!-- Bottom tugmalar -->
+        <div id="game-buttons">
+            <button onclick="nextGameWord()">➡️ Keyingi so‘z</button>
+            <button onclick="exitGame()">🏠 Asosiy sahifaga qaytish</button>
+        </div>
+        <p id="game-result"></p>
+    </div>
+
+    </div>
+
+ </div>
+
+<script src="script.js"></script>
+</body>
+</html>
