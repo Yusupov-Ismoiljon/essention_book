@@ -249,3 +249,117 @@ h2 {
   50% { transform: scale(1.2); }
   100% { transform: scale(1); }
 }
+/* ============ TELEFON (MOBILE) ============ */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .main-container {
+        margin: 10px auto;
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    /* MENU tugmalar */
+    .menu-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu-buttons button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* UNITLAR – 2 tadan */
+    #units,
+    #game-units {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .unit-btn {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    /* SO‘ZLAR BLOKI */
+    .sozlar-qatori {
+        padding: 15px;
+    }
+
+    /* Pause / Next */
+    .controls-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .control-buttons {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .control-buttons button {
+        flex: 1;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* TIMER */
+    .timer-container {
+        font-size: 22px;
+        padding: 6px 14px;
+    }
+
+    /* SO‘Z QATORI */
+    .od {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    #word-display {
+        font-size: 26px;
+    }
+
+    #pronunciation {
+        font-size: 16px;
+    }
+
+    #translation {
+        font-size: 22px;
+    }
+
+    /* O‘YIN QISMI */
+    #game-word {
+        font-size: 24px;
+    }
+
+    #game-input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #game-container button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    /* PASTKI TUGMALAR */
+    #game-buttons button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
